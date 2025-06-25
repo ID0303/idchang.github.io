@@ -46,5 +46,13 @@ function setUserName() {
   {
     localStorage.setItem("name", myName);
     myHeading.textContent = "Mozilla is cool, " + myName;
+
+    createParagraph();
   }
+}
+
+function createParagraph() {
+  const para = document.createElement("p");
+  para.textContent = "You clicked the button!";
+  document.body.appendChild(para);
 }
